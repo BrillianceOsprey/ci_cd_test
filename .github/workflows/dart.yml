@@ -14,8 +14,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-  tests: 
-    runs-one: ununtu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: subosito/flutter-action@v1
@@ -42,3 +40,6 @@ jobs:
       # want to change this to 'flutter test'.
       - name: Run tests
         run: dart test
+  test:
+    name: Flutter Tests
+    runs-on: ubuntu-latest
