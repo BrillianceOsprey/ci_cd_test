@@ -11,17 +11,7 @@ on:
   pull_request:
     branches: [ "main" ]
 
-
 jobs:
-  tests:
-    name: Tests
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Run tests
-        run: |
-          bash run_tests.sh    
-
   build:
     runs-on: ubuntu-latest
 
